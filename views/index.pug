@@ -1,0 +1,203 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title kartik Tutions- leading education
+  link(rel='shortcut icon' href='img/fav.ico' type='image/x-icon')
+  link(rel='stylesheet' href='../static/style.css')
+header
+  #leftHeader
+    img(src='../static/img/logo.png' alt='logo' title='Kartik Tutions' height='50px' width='50px')
+  #hamburger(onclick='ham()')
+    #box-1.box
+    #box-2.box
+    #box-3.box
+  #nav-list.nav-none
+    ul#nav-item
+      li.navItems
+        a(href='#home') Home
+      li.navItems
+        a(href='#about-section') About us
+      li.navItems
+        a(href='#alumni-section') Alumni
+      li.navItems
+        a(href='#courses-section') Courses
+      li.navItems
+        a(href='#contact-section') Contact
+  #rightHeader
+    nav#navigation
+      ul#nav-wrap
+        li.listItems
+          a(href='#home') Home
+        li.listItems
+          a(href='#about-section') About us
+        li.listItems
+          a(href='#alumni-section') Alumni
+        li.listItems
+          a(href='#courses-section') Courses
+        li.listItems
+          a(href='#contact-section') Contact
+    button.primary-btn
+      a.none(href='#contact-section') Connect
+main
+  section#home
+    .container
+      h3.main-heading Best Tution Classes in Uttarakhand
+      p.main-paragraph
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo accusamus
+        | magnam assumenda magni
+        | pariatur rem nemo dolor earum temporibus dignissimos, asperiores perspiciatis odio, delectus
+        | aliquam, ea
+        | aliquid amet at laborum.
+      button#banner-btn.primary-btn
+        a.none(href='#contact-section') Contact
+  section#about-section
+    .flex-wrap
+      .left-box
+        h2 About us
+        p
+          | We are a leading tutions chains in all over Uttarakhand. We have best of the best teachers from
+          | all over india. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo reiciendis debitis
+          | expedita consequatur iure fugit unde libero nam excepturi numquam.
+      .right-box
+        img(src='../static/img/about.jpg' alt='about-section img' height='250px' width='250px')
+  section#alumni-section
+    .alumni-container
+      h2 Our Proud Alumnis
+      .cards-wrapper
+        .card
+          .img-frame(style="background: url('../static/img/g1.jpg') no-repeat center; background-size: cover;")
+          h6 James Brandy
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/b1.jpg') no-repeat center; background-size: cover;")
+          h6 Michael clark
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/g2.jpg') no-repeat center; background-size: cover;")
+          h6 Shruti Jain
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/b2.jpg') no-repeat center; background-size: cover;")
+          h6 Bricks Mahon
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/g3.jpg') no-repeat center; background-size: cover;")
+          h6 Frank Paul
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/b3.jpg') no-repeat center; background-size: cover;")
+          h6 Shanes Watt
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/g4.jpg') no-repeat center; background-size: cover;")
+          h6 Ana Mahon
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/b4.jpg') no-repeat center; background-size: cover;")
+          h6 Mike Hause
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/g5.jpg') no-repeat center; background-size: cover;")
+          h6 Angela James
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+        .card
+          .img-frame(style="background: url('../static/img/b5.jpg') no-repeat center; background-size: cover;")
+          h6 Fang Auth
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, inventore! Autem voluptatem
+            | doloribus ullam ad.
+  section#courses-section
+    .course-container
+      h2#c-head Our Courses
+      #courseCard-wrapper
+        .course-card
+          h3
+            | 10
+            sup th
+            |  and 12
+            sup th
+          ul
+            li Board Level Examination
+            li CBSE Boards only
+            li Achieved 90%+
+            li Best in Market
+          button.primary-btn.green
+            a(href='#contact-section') Enquire
+        .course-card
+          h3 JEE MAINS
+          ul
+            li Engineering Level Examination
+            li NTA only
+            li Achieved 90%ile
+            li Best in Market
+          button.primary-btn.green
+            a(href='#contact-section') Enquire
+        .course-card
+          h3 NEET
+          ul
+            li MBBS Level Examination
+            li NTA Boards only
+            li Achieved 688 marks
+            li Best in Market
+          button.primary-btn.green
+            a(href='#contact-section') Enquire
+  section#contact-section
+    h2 Contact us
+    .contact-container
+      .contact-left
+        form(action='/' method="post")
+        
+          label(for='name')
+            | Name: 
+            span(style='color: red; font-size:1rem ;') *required
+          input#name(type='text' name='name' placeholder='Enter your Name' style='display: block;' required='')
+          label(for='myCourse')
+            | Course: 
+            span(style='color: red; font-size:1rem ;') *required
+          select#myCourse(name='myCourse' style='display: block;' required='')
+            option(selected='') select your Course
+            option(value='Boards') Boards
+            option(value='JEE Mains') JEE Mains
+            option(value='NEET') NEET
+          label(for='email')
+            | Email: 
+            span(style='color: rgba(61, 245, 15, 0.56); font-size:1rem ;') *optional
+          input#email(type='email' name='email' placeholder='Enter your email' style='display: block;')
+          label(for='number')
+            | Mob: 
+            span(style='color: red; font-size:1rem ;') *required
+          input#number(type='number' name='number' placeholder='Enter your Mobile number' style='display: block;' required='')
+          button(type='submit' style='background-color:green ;') Submit
+          button(type='reset' style='background-color:red ;') Reset
+      .contact-right
+        iframe#locMap(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27677.7826085209!2d77.84663467910157!3d29.872266399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390eb380325e2513%3A0x441ba8c7afaa333a!2sUnique%20Chemistry%20Classes!5e0!3m2!1sen!2sin!4v1659262365801!5m2!1sen!2sin' height='200' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
+        .ex
+          p(style='margin-top: 0.5em; background-color: yellow;')
+            span(style='font-weight: bold; font-size :1.5em;background-color: white;') Adress:
+            |                             711/10, Mathura
+            |                             Vihar, Mathura Vihar Colony, Veer Bhawan Nagar,
+            |                             Roorkee, Uttarakhand 247667
+          p#randompara(style='margin-top: 0.5em;') +91
+  footer
+    p Copyright 2019 &copy; | All Rights Reserved with &#x2764;
+script(src='../static/script.js')

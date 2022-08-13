@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Hamburger */
+#hamburger {
+    position: absolute;
+    right: 2.5em;
+    top: 1.5em;
+    display: none;
+}
+
+.box {
+    height: 4px;
+    width: 37px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+
+#nav-list {
+    width: 100vw;
+    height: 2vh;
+    /* height: 26vh; */
+    background-color: black;
+    /* border: 2px solid red; */
+    align-items: center;
+}
+
+
+#nav-item {
+    position: absolute;
+    top: 4em;
+    left: 0em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+
+.navItems {
+
+    list-style: none;
+    font-size: 1.6em;
+    padding: 0.5em 2em;
+    display: none;
+}
+
+.navItems>a {
+    text-decoration: none;
+    color: white;
+}
+
+#box-3 {
+    transition: all 0.1s ease-in-out;
+}
+
+#box-1 {
+    transition: all 0.25s ease-in-out;
+}
+
+#box-2 {
+    transition: all 0.25s ease-in-out;
+}
+
+
+#rightHeader {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+#leftHeader {
+    /* border: 1px solid blue; */
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.listItems {
+    list-style: none;
+    font-size: 1.6em;
+    padding: 0.5em 2em;
+}
+
+.listItems a {
+    text-decoration: none;
+    color: white;
+}
+
+/* utility classes */
+.primary-btn {
+    padding: 0.4em 1.2em;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+
+.green {
+    transition: all 0.3s ease-in;
+    font-weight: bold;
+}
+
+.green:hover {
+    background-color: rgb(30, 228, 30);
+}
+
+.none {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-none {
+    display: none;
+}
+
+.nav-block {
+    display: block;
+}
+
+/* Home section */
+
+#home {
+    background: url('img/banner.jpg') no-repeat center;
+    background-color: rgba(0, 0, 0, 0.564);
+    background-blend-mode: overlay;
+    min-height: 60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 80em;
+    margin: 3em;
+    padding: 1em;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.container>h3 {
+    font-size: 3rem;
+    padding-bottom: 0.6em;
+}
+
+.container>p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding-bottom: 1em;
+    color: white;
+}
+
+.container>button {
+    padding: 0.6em 0em;
+    font-weight: bold;
+}
+
+.container>button>a {
+    padding: 0em 5em;
+}
+
+.main-heading {
+    font-size: 2em;
+    color: white;
+}
+
+
+
+
+/* about section */
+
+#about-section {
+    min-height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    max-width: 80em;
+    margin: 3em;
+    padding: 1em;
+    background-color: whitesmoke;
+    box-shadow: 1em 1em 0.5em 0.5em #0000004f;
+}
+
+.left-box {
+    width: 65%;
+    padding: 1.5em;
+}
+
+.left-box>h2 {
+    font-size: 3.5rem;
+    padding-bottom: 1em;
+}
+
+.left-box>p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+}
+
+.right-box>img {
+    align-self: flex-end;
+}
+
+/* alumni-section */
+
+#alumni-section {
+    text-align: center;
+    min-height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0b0b;
+    color: white;
+}
+
+.alumni-container {
+
+    margin: 6em;
+    padding: 2em;
+    border-radius: 2.5em;
+}
+
+.alumni-container>h2 {
+    font-size: 3.5rem;
+    padding-bottom: 2em;
+}
+
+.img-frame {
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+}
+
+.cards-wrapper {
+    max-width: 60vw;
+    display: flex;
+    overflow: hidden;
+    padding: 2em;
+}
+
+.card {
+    min-width: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.8em;
+    margin: 1em 2em;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    transition: transform 1s ease-in-out 1s;
+
+}
+
+.card>h6 {
+    font-size: 2.5rem;
+    margin: 1em 0 0.5em
+}
+
+.card>p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+
+/* Course Section */
+
+#courses-section {
+    min-height: 60em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-container {
+    text-align: center;
+}
+
+#c-head {
+    font-size: 4rem;
+    margin-bottom: 2em;
+}
+
+#courseCard-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 110em;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.course-card {
+    border: 2px solid green;
+    padding: 2em;
+    border-radius: 0.8em;
+    margin: 2em;
+    min-width: 25em;
+}
+
+.course-card>h3 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+.course-card>ul {
+    margin: 3em 0em;
+}
+
+.course-card>ul>li {
+    list-style: none;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    font-weight: 600;
+    color: gray;
+}
+
+.course-card>button {
+    width: 100%;
+}
+
+.course-card>button>a {
+    padding: 0 6.2em;
+    text-decoration: none;
+    color: white;
+}
+
+/* contact section */
+#contact-section {
+    text-align: center;
+    color: white;
+    background-color: #0c0b0b;
+    padding-top: 3.5em;
+}
+
+#contact-section>h2 {
+    font-size: 3em;
+}
+
+.contact-container {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 0em 5em 0em;
+}
+
+.contact-left {
+    flex-basis: 50em;
+    text-align: left;
+    padding: 2em;
+}
+
+.contact-left>form>input,
+.contact-left>form>select {
+    margin-bottom: 1em;
+    width: 81%;
+    margin-bottom: 1.2em;
+    padding: 0.5em;
+    outline: none;
+    border: none;
+}
+
+
+.contact-left>form>select {
+    width: 84%;
+}
+
+.contact-left>form>label {
+    font-size: 1.4rem;
+    margin-bottom: 0.2em;
+}
+
+.contact-left>form>button {
+    width: 41.5%;
+    border: none;
+    color: white;
+    padding: 0.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-right {
+    border-left: 2px solid white;
+    padding: 3em;
+    padding-left: 2.5em;
+    min-height: 35em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+#locMap {
+    width: 40em;
+}
+
+.ex {
+    margin-top: 1em;
+    padding-left: 0.5em;
+    font-size: 1.3em;
+    max-width: 30.8em;
+    background-color: white;
+    color: black;
+}
+
+footer {
+    padding: 2em;
+    border-top: 2px solid white;
+    text-align: center;
+    background-color: #0c0b0b;
+}
+
+footer>p {
+    font-size: 1.25rem;
+    color: white;
+
+}
+
+
+
+@media (max-width:900px) {
+    #leftHeader {
+        width: 12%;
+        justify-content: center;
+    }
+
+    #rightHeader {
+        width: 88%;
+    }
+
+    .listItems {
+        padding: 0.5em 1em;
+    }
+
+    .left-box {
+        width: 100%;
+    }
+
+    .left-box>h2 {
+        text-align: center;
+    }
+
+    .right-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #c-head {
+        margin: 1em 0;
+    }
+
+    #courseCard-wrapper {
+        margin-bottom: 3em;
+    }
+
+
+    .contact-right {
+        border-left: none;
+    }
+
+
+
+}
+
+@media (max-width:630px) {
+    #rightHeader {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .navItems {
+        display: block;
+    }
+
+    #nav-list {
+        height: 26vh;
+
+    }
+
+    .ex {
+        max-width: 26.8em;
+    }
+
+    .contact-container {
+        padding: 0em 0em 5em 0em;
+    }
+
+    #locMap {
+        width: 30em;
+    }
+}
